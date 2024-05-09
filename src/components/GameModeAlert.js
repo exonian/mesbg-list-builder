@@ -14,7 +14,6 @@ export function GameModeAlert({gameModeAlert, setGameModeAlert, setRoster}) {
     setGameModeAlert(false);
   }
   return (<Alert
-    style={{width: "850px", zIndex: 1050, marginLeft: "535px"}}
     className="position-fixed"
     show={gameModeAlert}
     variant="danger"

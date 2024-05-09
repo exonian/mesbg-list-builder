@@ -44,7 +44,6 @@ export function DefaultWarriorUnit({
   return (<Button
     variant="light"
     className="p-2 m-1"
-    style={{width: "820px", textAlign: "left"}}
     onClick={handleClick}
   >
     <Stack direction="horizontal" gap={3}>
@@ -55,7 +54,6 @@ export function DefaultWarriorUnit({
       <Button
         onClick={handleDelete}
         className="ms-auto mt-auto"
-        style={{marginRight: "10px", marginBottom: "5px"}}
         variant={"warning"}
       >
         <ImCross/>

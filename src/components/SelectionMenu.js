@@ -71,13 +71,12 @@ export function SelectionMenu({
 
   return (<div
     id="optionMenu"
-    className="optionsList p-3 border border-4 rounded position-fixed bg-white"
+    className="optionsList p-3 border border-4 rounded bg-white"
   >
     {displaySelection ? (<>
       <Button
         variant="light"
         className="ms-2 border"
-        style={{float: "right"}}
         onClick={() => setDisplaySelection(false)}
       >
         <ImCross/>
@@ -96,7 +95,6 @@ export function SelectionMenu({
               disabled={!heroSelection || factionType.includes("LL")}
             >
               {[...faction_lists[f_type]].sort().map((f) => (<Dropdown.Item
-                style={{width: "458px", textAlign: "center"}}
                 eventKey={f}
               >
                 <img

@@ -26,7 +26,7 @@ export function GameModeCasualties ({roster, casualtyCount, setCasualtyCount, he
       <Stack direction="horizontal">
         <h5 className="m-0">Casualties: </h5>
         <Button className="ms-2" variant="secondary" size="sm" onClick={handleDecrement} disabled={casualtyCount === 0}><FaChevronLeft /></Button>
-        <h5 className="m-0" style={{width: "40px", textAlign: "center"}}><b>{casualtyCount + heroCasualtyCount}</b></h5>
+        <h5 className="m-0"><b>{casualtyCount + heroCasualtyCount}</b></h5>
         <Button variant="secondary" size="sm" onClick={handleIncrement} disabled={casualtyCount >= (roster.num_units - Object.values(gameHeroes).reduce((val, x) => val + x.length, 0))}><FaChevronRight /></Button>
       </Stack>
       {(Math.floor(0.5 * roster.num_units) + 1 - (casualtyCount + heroCasualtyCount)) <= 0 ?

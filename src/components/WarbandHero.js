@@ -93,7 +93,7 @@ export function WarbandHero({
     setRoster(newRoster);
   }
 
-  return (<Card style={{width: "820px"}} className="p-2 pb-3 m-1" bg={"light"}>
+  return (<Card className="p-2 pb-3 m-1" bg={"light"}>
     <Stack direction="horizontal" gap={3} style={{alignItems: "start"}}>
       <img
         className="profile mt-1 mb-1"
@@ -127,8 +127,7 @@ export function WarbandHero({
               />
             </Stack>}
           <p
-            className={["Hero of Legend", "Hero of Valour", "Hero of Fortitude", "Minor Hero"].includes(unitData.unit_type) ? "m-0 ms-2" : "m-0 ms-auto"}
-            style={{paddingRight: "10px"}}>
+            className={["Hero of Legend", "Hero of Valour", "Hero of Fortitude", "Minor Hero"].includes(unitData.unit_type) ? "m-0 ms-2" : "m-0 ms-auto"} >
             Points: <b>{unitData.pointsTotal}</b>
           </p>
         </Stack>

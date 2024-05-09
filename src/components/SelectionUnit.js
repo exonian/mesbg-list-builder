@@ -122,7 +122,6 @@ export function SelectionUnit({
 
   return (<Button
     variant="light"
-    style={{width: "461px", textAlign: "left"}}
     onClick={handleClick}
     className="border shadow-sm"
   >

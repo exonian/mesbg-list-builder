@@ -129,7 +129,7 @@ export function WarbandWarrior({
     setShowCardModal(true);
   };
 
-  return (<Card style={{width: "820px"}} className="p-2 pb-3 m-1" bg={"light"}>
+  return (<Card className="p-2 pb-3 m-1" bg={"light"}>
     <Stack direction="horizontal" gap={3} style={{alignItems: "start"}}>
       <img
         className="profile mt-1 mb-1"

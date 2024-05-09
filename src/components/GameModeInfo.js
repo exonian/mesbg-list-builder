@@ -13,7 +13,7 @@ export function GameModeInfo({factionList, allianceLevel, allianceColours, roste
 
   return (<div
     id="optionMenu"
-    className="optionsList border border-4 rounded position-fixed bg-white p-3"
+    className="optionsList border border-4 rounded bg-white p-3"
   >
       <Stack className="mb-5" direction="horizontal">
         <h4 className="m-0"><FaChessRook /> Game Mode</h4>

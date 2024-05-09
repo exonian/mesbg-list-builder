@@ -47,7 +47,6 @@ export function TopNavbar({
   }
 
   return (<Navbar
-    style={{minWidth: "1450px"}}
     bg="dark"
     data-bs-theme="dark"
     className="shadow fixed-top"
@@ -57,7 +56,7 @@ export function TopNavbar({
         <Stack>
           <Stack direction="horizontal" gap={3}>
             <img src={require("../images/title-logo.png")} alt=""/>
-            <Stack gap={2} style={{width: "260px"}}>
+            <Stack gap={2}>
               <img
                 className="mt-2"
                 src={require("../images/title.png")}
@@ -79,7 +78,7 @@ export function TopNavbar({
             </a>
           </p>
         </Stack>
-        <Stack style={{width: "835px"}}>
+        <Stack>
           <Stack className="mt-3" direction="horizontal" gap={3}>
             {!gameMode ?
               <Button
@@ -122,7 +121,7 @@ export function TopNavbar({
             <h6 className="mb-0 mt-2">
               Total Units: <b>{roster.num_units}</b>
             </h6>
-            <h6 className="mb-0 mt-2" style={{minWidth: "120px"}}>
+            <h6 className="mb-0 mt-2">
               Break Point: <b>{Math.round((0.5 * roster.num_units) * 100) / 100}</b>
             </h6>
             <h6 className="mb-0 mt-2">

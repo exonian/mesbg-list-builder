@@ -154,10 +154,9 @@ export function Warbands({
     setDisplaySelection(false);
   };
 
-  return (<Stack style={{marginLeft: "535px"}} gap={3}>
+  return (<Stack gap={3}>
     {roster.warbands.map((warband) => (<Card
       key={uuid()}
-      style={{width: "850px"}}
       className="p-2 shadow"
       bg={"secondary"}
       text={"light"}
@@ -188,7 +187,6 @@ export function Warbands({
         <Button
           onClick={() => handleCopyWarband(warband.num)}
           className="mt-1 ms-auto mb-2"
-          style={{marginRight: "10px"}}
           variant={"info"}
         >
           <HiDuplicate/>
@@ -196,7 +194,6 @@ export function Warbands({
         <Button
           onClick={() => handleDeleteWarband(warband.num)}
           className="mt-1 mb-2"
-          style={{marginRight: "10px"}}
           variant={"danger"}
         >
           <MdDelete/>
@@ -248,12 +245,11 @@ export function Warbands({
           onClick={() => handleNewWarrior(warband.num)}
           variant={"info"}
           className="m-1"
-          style={{width: "820px"}}
         >
           Add Unit <FaPlus/>
         </Button>)}
     </Card>))}
-    <Button onClick={() => handleNewWarband()} style={{width: "850px"}}>
+    <Button onClick={() => handleNewWarband()}>
       Add Warband <FaPlus/>
     </Button>
   </Stack>);
