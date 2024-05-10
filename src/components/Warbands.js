@@ -154,7 +154,7 @@ export function Warbands({
     setDisplaySelection(false);
   };
 
-  return (<Stack gap={3}>
+  return (<Stack gap={3} className="flex-grow-1">
     {roster.warbands.map((warband) => (<Card
       key={uuid()}
       className="p-2 shadow"

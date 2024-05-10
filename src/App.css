@@ -14,7 +14,8 @@ img.faction_logo {
 }
 
 div.optionsList {
-  height: calc(100vh - 200px);
+  width: 30rem;
+  max-height: calc(100vh - 200px);
   overflow-y: auto;
   z-index:1000;
 }
@@ -29,7 +30,11 @@ svg {
 }
 
 pre {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
+}
+
+.title-image {
+  max-width: 260px;
 }
 
 .modal-backdrop {

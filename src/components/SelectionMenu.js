@@ -71,7 +71,7 @@ export function SelectionMenu({
 
   return (<div
     id="optionMenu"
-    className="optionsList p-3 border border-4 rounded bg-white"
+    className="optionsList p-3 border border-4 rounded bg-white flex-grow-1 flex-lg-shrink-1 flex-lg-grow-0"
   >
     {displaySelection ? (<>
       <Button

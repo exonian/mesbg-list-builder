@@ -49,7 +49,7 @@ export function TopNavbar({
   return (<Navbar
     bg="dark"
     data-bs-theme="dark"
-    className="shadow fixed-top"
+    className="shadow sticky-md-top"
   >
     <Navbar.Brand className="ms-4">
       <Stack direction="horizontal" gap={3}>
@@ -58,7 +58,7 @@ export function TopNavbar({
             <img src={require("../images/title-logo.png")} alt=""/>
             <Stack gap={2}>
               <img
-                className="mt-2"
+                className="mt-2 title-image"
                 src={require("../images/title.png")}
                 alt=""
               />

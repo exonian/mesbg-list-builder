@@ -271,7 +271,7 @@ export default function App() {
       setGameModeAlert={setGameModeAlert}
       setShowBuilderModal={setShowBuilderModal}
     />
-    <div className="m-4">
+    <div className="m-4 hstack flex-wrap flex-lg-nowrap align-items-stretch">
       <ExportAlert exportAlert={exportAlert} setExportAlert={setExportAlert}/>
       <GameModeAlert gameModeAlert={gameModeAlert} setGameModeAlert={setGameModeAlert} setRoster={setRoster}/>
       {!gameMode ?
