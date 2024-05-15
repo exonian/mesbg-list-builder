@@ -51,35 +51,21 @@ export function TopNavbar({
     data-bs-theme="dark"
     className="shadow sticky-md-top"
   >
-    <Navbar.Brand className="ms-4">
-      <Stack direction="horizontal" gap={3}>
-        <Stack>
-          <Stack direction="horizontal" gap={3}>
-            <img src={require("../images/title-logo.png")} alt=""/>
-            <Stack gap={2}>
-              <img
-                className="mt-2 title-image"
-                src={require("../images/title.png")}
-                alt=""
-              />
-              <span className="p-0 m-0" style={{fontSize: "16px"}}>
-                  v{VERSION} (updated {UPDATED})
-                </span>
-            </Stack>
+    <Navbar.Brand className="ms-4 w-100">
+      <Stack>
+        <Stack direction="horizontal" gap={3} className="align-items-start flex-wrap flex-lg-nowrap">
+          <img src={require("../images/title-logo.png")} alt=""/>
+          <Stack gap={2}>
+            <img
+              className="mt-2 title-image"
+              src={require("../images/title.png")}
+              alt=""
+            />
+            <span className="p-0 m-0" style={{fontSize: "16px"}}>
+              v{VERSION} (updated {UPDATED})
+            </span>
           </Stack>
-          <p
-            className="mt-3 ms-3 m-0 p-0 text-muted"
-            style={{fontSize: "14px"}}
-          >
-            <MdReportGmailerrorred style={{fontSize: "20px"}}/> For any
-            bugs and corrections, please contact:{" "}
-            <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">
-              avcordaro@gmail.com
-            </a>
-          </p>
-        </Stack>
-        <Stack>
-          <Stack className="mt-3" direction="horizontal" gap={3}>
+          <Stack className="flex-wrap justify-content-end" direction="horizontal" gap={3}>
             {!gameMode ?
               <Button
                 variant="success"
@@ -114,7 +100,19 @@ export function TopNavbar({
               <BiSolidFileImport/> Import JSON
             </Button>
           </Stack>
-          <Stack className="mt-4" direction="horizontal" gap={4}>
+        </Stack>
+        <Stack direction="horizontal" gap={3} className="flex-wrap justify-content-between">
+          <p
+            className="mt-3 ms-3 m-0 p-0 text-muted"
+            style={{fontSize: "14px"}}
+          >
+            <MdReportGmailerrorred style={{fontSize: "20px"}}/> For any
+            bugs and corrections, please contact:{" "}
+            <a href="mailto:avcordaro@gmail.com?subject=MESBG List Builder - Bug/Correction">
+              avcordaro@gmail.com
+            </a>
+          </p>
+          <Stack direction="horizontal" gap={4} className="flex-wrap-reverse flex-fill">
             <h6 className="mb-0 mt-2">
               Total Points: <b>{roster.points}</b>
             </h6>
